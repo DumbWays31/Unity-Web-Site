@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.4/build/player/lottie.min.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <header>
+        <script src="js/header.js"></script>
+    </header>
+
+    <section class="projectTitle">
+        <div class="projectContent">
+            <h1>LE PROJET</h1>
+        </div>
+    </section>
+
+    <section id="project-1">
+        <div>
+            <h2>QUI SOMMES NOUS ?</h2>
+            <p>
+                Une classe de 21 étudiants issus de l'IUT d'Orsay, unis par un projet captivant : 
+                la conception d'un jeu vidéo multijoueur sur Unity. Pendant une période intensive 
+                de 4 mois, notre équipe s'est consacrée à l'élaboration d'un divertissement en ligne. 
+                Notre objectif principal ? Créer un jeu vidéo au gameplay à la fois simple et divertissant.
+            </p>
+        </div>
+
+        <div id="counterContainer" class="counter">
+            <div>
+                <span class="number" id="linesCounter"></span>
+                <span class="text">Lignes de code</span>
+            </div>
+            <div>
+                <span class="number" id="filesCounter"></span>
+                <span class="text">Fichiers</span>
+            </div>
+            <div>
+                <span class="number" id="hoursCounter"></span>
+                <span class="text">Heures de travail</span>
+            </div>
+        </div>
+        <script src="js/compteur.js"></script>
+        
+    </section>
+
+    <section id="project-2">
+        <h2>LES CONSIGNES</h2>
+
+        <div class="instruction">
+            <h3>Personnage</h3>
+            <p>Réaliser le contrôle et l'animation d'un personnage joueur</p>
+            <img src="img/gif/characterController.gif" alt="Personnage GIF">
+        </div>
+
+        <div class="instruction">
+            <h3>Contrôle de foule</h3>
+            <p>Faire réaliser un comportement de foule (crowd simulation)</p>
+            <img src="img/gif/crowd.gif" alt="Contrôle de foule GIF">
+        </div>
+
+        <div class="instruction">
+            <h3>Multijoueur</h3>
+            <p>Faire communiquer et synchroniser pour deux joueurs la scène de jeu</p>
+            <img src="img/gif/multiplayer.gif" alt="Multijoueur GIF">
+        </div>
+    </section>
+
+
+    <section id="project-3">
+        <div>
+            <h2>UN APERÇU DE NOTRE TRAVAIL</h2>
+        </div>
+    </section>
+
+    <section class="slides-container">
+        <div class="slides"><img src="img/Comparaison_V2/1.png" style="width:100%"></div>   
+        <div class="slides"><img src="img/Comparaison_V2/2.png" style="width:100%"></div>
+        <div class="slides"><img src="img/Comparaison_V2/3.png" style="width:100%"></div>
+        <div class="slides"><img src="img/Comparaison_V2/4.png" style="width:100%"></div>
+        <div class="slides"><img src="img/Comparaison_V2/5.png" style="width:100%"></div>
+        <div class="slides"><img src="img/Comparaison_V2/6.png" style="width:100%"></div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div style="text-align:center" id="dot-container"></div>
+        <script src="js/slider.js"> </script>
+    </section>
+
+    <section class="render">
+        <div id="content-container">
+            <h3>LE BOSS FINAL</h3>
+            <div id="printer-container"></div>
+        </div>
+        <script type="module" src="js/printer_render.js"></script>
+
+        <br>
+
+        <div id="content-container">
+            <h3>LES ENNEMIS</h3>
+            <div id="zombie-container"></div>
+        </div>
+        <script type="module" src="js/zombie_render.js"></script>
+
+        <br>
+
+        <div id="content-container">
+            <h3>LE JOUEUR</h3>
+            <div id="player-container"></div>
+        </div>
+        <script type="module" src="js/player_render.js"></script>
+    </section>
+    
+
+    <div id="dynamicFooterContainer">
+        <script src="js/footer.js"></script>
+    </div>
+
+</body>
+</html>
